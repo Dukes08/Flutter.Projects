@@ -9,7 +9,8 @@ class SnackbarScreen extends StatelessWidget {
     // El clear es por si se le da click varias veces no aparezcan todos sino que aparezca uno y se oculte en el anterior
     ScaffoldMessenger.of(context).clearSnackBars();
 
-    final snackBar = const SnackBar(
+// manejo de snackbar dialogs
+    const snackBar = SnackBar(
       content: Text('Hola Mundo'),
       duration: Duration(seconds: 2),
     );
@@ -17,6 +18,7 @@ class SnackbarScreen extends StatelessWidget {
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
+// manejo de custom dialogs
   void openDialog(BuildContext context) {
     showDialog(
       context: context,
