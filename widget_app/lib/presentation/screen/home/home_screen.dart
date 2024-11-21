@@ -18,6 +18,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
+// se renderizan los menu items
 class _HomeView extends StatelessWidget {
   const _HomeView();
 
@@ -32,6 +33,8 @@ class _HomeView extends StatelessWidget {
     );
   }
 }
+
+// Widget usado para mostrar mejor los menu items
 
 class _CustomTile extends StatelessWidget {
   const _CustomTile({
