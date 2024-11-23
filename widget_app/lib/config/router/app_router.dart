@@ -4,6 +4,7 @@ import 'package:widget_app/presentation/screen/app_tutorial/app_tutorial_screen.
 import 'package:widget_app/presentation/screen/button/buttons_screen.dart';
 import 'package:widget_app/presentation/screen/cards/cards_screen.dart';
 import 'package:widget_app/presentation/screen/home/home_screen.dart';
+import 'package:widget_app/presentation/screen/infinite_scroll/infinite_scroll_screen.dart';
 import 'package:widget_app/presentation/screen/progress/progress_screen.dart';
 import 'package:widget_app/presentation/screen/snackbar/snackbar_screen.dart';
 import 'package:widget_app/presentation/screen/ui_controls/ui_controls_screen.dart';
@@ -43,6 +44,10 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/tutorial',
       builder: (context, state) => const AppTutorialScreen(),
+    ),
+    GoRoute(
+      path: '/infinite',
+      builder: (context, state) => const InfiniteScrollScreen(),
     ),
   ],
 );
